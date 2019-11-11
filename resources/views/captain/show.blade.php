@@ -27,7 +27,7 @@
     <section class="captain-assign">
         <h2>Assign a captain</h2>
 
-        <form action="{{ action('CaptainController@update') }}" method="post">
+        <form action="{{ action('CaptainController@update', $captain->slug) }}" method="post">
         @csrf
 
             <input type="text" name="subject" placeholder="Cause for assignment">

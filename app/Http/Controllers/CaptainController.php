@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Assignment;
+
 class CaptainController extends Controller
 {
     //
@@ -27,10 +29,17 @@ class CaptainController extends Controller
         return $view;
     }
 
-    public function update()
+    public function update(Request $request)
     {   
-        $captains = \App\Captain::orderBy('name', 'asc')->get();
-        $view = view('captain/index', compact('captains'));
-        return $view;
+        $subject = $request->input('subject');
+        $description = $request->input('description');
+
+        $newAssignment = new Assignment;
+
+        $newAssignment->subject = $subject;
+
+        $newAssignment->description = $description;
+
+        $newAssignment->save();
     }
 }
