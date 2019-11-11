@@ -6,6 +6,8 @@
     <title>Starfleet</title>
 
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bangers&amp;subset=latin-ext" rel="stylesheet">
+    <link href="C:\www\bootcamp\test_laravel\public\css\index.css" rel="stylesheet">
+    
     
     {{-- load the stylesheet --}}
 </head>

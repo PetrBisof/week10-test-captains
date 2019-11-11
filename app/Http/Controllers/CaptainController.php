@@ -19,4 +19,18 @@ class CaptainController extends Controller
         $view->captain = $captain;
         return $view;
     }
+
+    public function index()
+    {   
+        $captains = \App\Captain::orderBy('name', 'asc')->get();
+        $view = view('captain/index', compact('captains'));
+        return $view;
+    }
+
+    public function update()
+    {   
+        $captains = \App\Captain::orderBy('name', 'asc')->get();
+        $view = view('captain/index', compact('captains'));
+        return $view;
+    }
 }

@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\www\\bootcamp\\test_laravel\\resources\\sass\\app.scss\""); }());
 
 
 /***/ }),
@@ -76,12 +76,6 @@ module.exports = __webpack_require__(2);
 /***/ (function(module, exports) {
 
 // start your React coding in here
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
